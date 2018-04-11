@@ -10,7 +10,7 @@
   <body>
     <header class="main-header container">
       <nav class="main-navigation catalog-main-navigation">
-        <a class="logo" href="index.html">
+        <a class="logo logo-catalog" href="index.html">
           <strong>Device</strong>
         </a>
         <ul class="user-navigation">
@@ -21,41 +21,41 @@
             </form>
           </li>
           <li class="user-navigation-item enter">
-            <a class="user-navigation-link client-entered" href="#">
-              Валентин Петухов
-              <span>Выйти</span>
-            </a>
+            <a class="user-navigation-link client-entered" href="#">Валентин Петухов</a>
+            <a class="authorized-enter" href="#">Выйти</a>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item compare">
             <a class="user-navigation-link" href="#">Сравнить</a>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item cart">
             <a class="user-navigation-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="site-navigation">
           <li class="site-navigation-item catalog">
             <a class="site-navigation-link" href="#">каталог товаров</a>
-            <ul class="item-menu">
-              <li>
-                <a class="item-menu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Умные часы</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="item-menu-wrapper">
+              <ul class="item-menu">
+                <li>
+                  <a class="item-menu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Квадрокоптеры</a>
+                </li>
+                <li>
+                  <a class="item-menu-link">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-navigation-item departure">
             <a class="site-navigation-link" href="#">доставка</a>
@@ -160,7 +160,7 @@
               <a class="sorting-button sorting-button-min" href="#">
                 <span class="visually-hidden">по убыванию</span>
               </a>
-              <a class="sorting-button sorting-button-max" href="#">
+              <a class="sorting-button sorting-button-max active" href="#">
                 <span class="visually-hidden">по возрастанию</span>
               </a>
             </div>
@@ -175,8 +175,8 @@
                     <p class="item-price">500 руб.</p>
                   </div>
                   <div class="hover-block">
-                    <a class="button in-cart-button" href="#">В корзину</a>
-                    <a class="comparison-button" href="#">Добавить к сравнению</a>
+                    <button class="button in-cart-button" type="button">В корзину</button>
+                    <button class="comparison-button" type="button">Добавить к сравнению</button>
                   </div>
                 </li>
                 <li class="item">
@@ -192,8 +192,8 @@
                     <p class="item-price">1500 руб.</p>
                   </div>
                   <div class="hover-block">
-                    <a class="button in-cart-button" href="#">В корзину</a>
-                    <a class="comparison-button" href="#">Добавить к сравнению</a>
+                    <button class="button in-cart-button" type="button">В корзину</button>
+                    <button class="comparison-button" type="button">Добавить к сравнению</button>
                   </div>
                 </li>
                 <li class="item">
@@ -205,8 +205,8 @@
                     <p class="item-price">2500 руб.</p>
                   </div>
                   <div class="hover-block">
-                    <a class="button in-cart-button" href="#">В корзину</a>
-                    <a class="comparison-button" href="#">Добавить к сравнению</a>
+                    <button class="button in-cart-button" type="button">В корзину</button>
+                    <button class="comparison-button" type="button">Добавить к сравнению</button>
                   </div>
                 </li>
                 <li class="item">
@@ -218,8 +218,8 @@
                     <p class="item-price">4900 руб.</p>
                   </div>
                   <div class="hover-block">
-                    <a class="button in-cart-button" href="#">В корзину</a>
-                    <a class="comparison-button" href="#">Добавить к сравнению</a>
+                    <button class="button in-cart-button" type="button">В корзину</button>
+                    <button class="comparison-button" type="button">Добавить к сравнению</button>
                   </div>
                 </li>
               </ul>
@@ -248,21 +248,19 @@
     <footer class="main-footer">
       <div class="container footer-container">
         <nav class="footer-user-navigation">
-          <a class="footer-logo" href="index.html">
+          <a class="footer-logo logo-catalog" href="index.html">
             <strong>Device</strong>
           </a>
           <ul class="footer-user-navigation-list">
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link client-entered" href="#">
-                Валентин Петухов
-                <span>Выйти</span>
-              </a>
+              <a class="footer-user-navigation-link client-entered footer-enter" href="#">Валентин Петухов</a>
+              <a class="footer-user-navigation-link authorized-enter">Выйти</a>
             </li>
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link" href="#">Сравнить</a>
+              <a class="footer-user-navigation-link footer-compare" href="#">Сравнить</a>
             </li>
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link" href="#">Корзина</a>
+              <a class="footer-user-navigation-link footer-cart" href="#">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -307,5 +305,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

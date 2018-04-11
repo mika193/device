@@ -24,7 +24,7 @@
           <li class="user-navigation-item enter">
             <a class="user-navigation-link" href="#">Войти</a>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item compare">
             <a class="user-navigation-link" href="#">Сравнить</a>
           </li>
           <li class="user-navigation-item cart">
@@ -34,26 +34,28 @@
         <ul class="site-navigation">
           <li class="site-navigation-item catalog">
             <a class="site-navigation-link" href="#">каталог товаров</a>
-            <ul class="item-menu">
-              <li>
-                <a class="item-menu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Умные часы</a>
-              </li>
-              <li>
-                <a class="item-menu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="item-menu-wrapper">
+              <ul class="item-menu">
+                <li>
+                  <a class="item-menu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Квадрокоптеры</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="item-menu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-navigation-item departure">
             <a class="site-navigation-link" href="#">доставка</a>
@@ -71,7 +73,7 @@
       <div class="container">
         <h1 class="visually-hidden">Девайс - магазин современной техники</h1>
         <div class="slider-wrapper">
-          <section class="promo-slider">
+          <section class="promo-slider active">
             <h2 class="visually-hidden">Презентация наших товаров слайд 1</h2>
             <img class="promo-image" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи из карбона">
             <div class="promo-description-wrapper">
@@ -89,7 +91,7 @@
                 </tr>
                 <tr class="feature-row">
                   <td>Длина палки</td>
-                  <td>Вес палки</td>
+                  <td class="small">Вес палки</td>
                   <td>Материал</td>
                 </tr>
               </table>
@@ -99,7 +101,11 @@
             <h2 class="visually-hidden">Презентация наших товаров слайд 2</h2>
             <img class="promo-image" src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             <div class="promo-description-wrapper">
-              <p class="promo-slogan">Худеем правильно!</p>
+              <p class="promo-slogan">
+                Худеем
+                <br>
+                правильно!
+              </p>
               <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="button promo-link" href="#">Подробнее</a>
               <table class="promo-table">
@@ -122,13 +128,11 @@
               <table class="promo-table">
                 <tr class="description-row">
                   <td>800 м</td>
-                  <td>50 м</td>
-                  <td></td>
+                  <td class="small">50 м</td>
                 </tr>
                 <tr class="feature-row">
                   <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                  <td></td>
+                  <td class="small">Радиус поражения</td>
                 </tr>
               </table>
             </div>
@@ -151,7 +155,10 @@
             </li>
             <li class="popular-navigation-item">
               <a class="popular-navigation-link" href="catalog.html">
-                <span>Моноподы для селфи</span>
+                <span>Моноподы
+                  <br>
+                  для селфи
+                </span>
               </a>
               <svg class="popular-icon" width = "86" height= "177">
                 <use xlink:href = "img/pictures.svg#popular-2"></use>
@@ -207,7 +214,7 @@
             </li>
           </ul>
           <div class="services-slider">
-            <div class="services-slide">
+            <div class="services-slide active">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
@@ -224,22 +231,22 @@
       </section>
       <ul class="partners container">
         <li class=partners-item>
-          <a class="partners-link" href="#">
+          <a class="partners-link dji" href="#">
             <img class="partners-image" src="img/logo-1.jpg" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li class=partners-item>
-          <a class="partners-link" href="#">
+          <a class="partners-link spgadgets" href="#">
             <img class="partners-image" src="img/logo-2.jpg" width="260" height="100" alt="SP Gadgets">
           </a>
         </li>
         <li class=partners-item>
-          <a class="partners-link" href="#">
+          <a class="partners-link gopro" href="#">
             <img class="partners-image" src="img/logo-3.jpg" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li class=partners-item>
-          <a class="partners-link" href="#">
+          <a class="partners-link vive" href="#">
             <img class="partners-image" src="img/logo-4.jpg" width="260" height="100" alt="VIVE">
           </a>
         </li>
@@ -256,50 +263,61 @@
           </ul>
           <a class="button info-link" href="">Подробнее о нас</a>
         </section>
-        <section class="modal feedback-modal">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <button class="modal-close">
-            <span class="visually-hidden">Закрыть форму</span>
-          </button>
-          <form class="feedback-form" method="post" action="#">
-            <label for="feedback-name">Введите имя</label>
-            <input class="entry-field" id="feedback-name" name="feedback-name" type="text" placeholder="Имя Фамилия">
-            <label for="feedback-email">Ваш e-mail:</label>
-            <input class="entry-field" id="feedback-email" name="feedback-email" type="text" placeholder="email@example.com">
-            <label for="feedback-text">Текст письма:</label>
-            <textarea class="entry-field" id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </section>
         <section class="map">
           <h2>Контакты</h2>
           <p class="map-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img class="map-image" src="img/map.jpg" width="560" height="222" alt="ул. Строителей, д.15">
-          <a class="button map-link" href="#">напишите нам</a>
+          <a class="map-link" href="https://goo.gl/maps/M2JSc6E9sj92">
+            <div class="page-map" id="small-map">
+              <img class="map-image" src="img/map.jpg" width="560" height="222" alt="ул. Строителей, д.15">
+            </div>
+          </a>
+          <a class="button write-link" href="#">напишите нам</a>
         </section>
         <section class="modal big-map">
           <h2 class="visually-hidden">Увеличенная карта</h2>
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть форму</span>
           </button>
+          <div class="for-big-map" id="big-map"></div>
+        </section>
+        <section class="modal feedback-modal">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <button class="modal-close">
+            <span class="visually-hidden">Закрыть форму</span>
+          </button>
+          <form class="feedback-form" method="post" action="#">
+            <p class="name-wrapper">
+              <label for="feedback-name">Введите имя</label>
+              <input class="entry-field name" id="feedback-name" name="feedback-name" type="text" placeholder="Имя Фамилия">
+            </p>
+            <p class="email-wrapper">
+              <label for="feedback-email">Ваш e-mail:</label>
+              <input class="entry-field email" id="feedback-email" name="feedback-email" type="email" placeholder="email@example.com">
+            </p>
+            <p class="text-wrapper">
+              <label for="feedback-text">Текст письма:</label>
+              <textarea class="entry-field text" id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </section>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container footer-container">
         <nav class="footer-user-navigation">
-          <a class="footer-logo" href="#">
+          <a class="footer-logo logo" href="#">
             <strong>Device</strong>
           </a>
           <ul class="footer-user-navigation-list">
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link" href="#">Войти</a>
+              <a class="footer-user-navigation-link footer-enter" href="#">Войти</a>
             </li>
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link" href="#">Сравнить</a>
+              <a class="footer-user-navigation-link footer-compare" href="#">Сравнить</a>
             </li>
             <li class="footer-user-navigation-item">
-              <a class="footer-user-navigation-link" href="#">Корзина</a>
+              <a class="footer-user-navigation-link footer-cart" href="#">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -344,5 +362,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB923ENux0VZbLPEsPowTWjIuiIaiYM_hA&callback=initMap" async defer></script>
+   <script src="js/script.js"></script>
   </body>
 </html>
