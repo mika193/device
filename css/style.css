@@ -358,7 +358,8 @@ a {
 }
 .promo-slider {
   display: none;
-  padding: 1px 7px 100px 91px;
+  justify-content: space-between;
+  padding: 1px 60px 100px 91px;
 }
 .promo-slider.active {
   display: flex;
@@ -375,8 +376,8 @@ a {
 }
 .promo-description-wrapper {
   position: relative;
-  width: 520px;
-  padding: 79px 19px 10px 6px;
+  width: 500px;
+  padding: 79px 0px 10px 5px;
 }
 .promo-description-wrapper::before {
   content: "";
