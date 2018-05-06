@@ -87,7 +87,7 @@ if (minMap) {
 /*Slider*/
 function sliderFunction(place, button, slide) {
   var number = place.split("-");
-  for (var q=0; q < topSliderButton.length; q++) {
+  for (var q=0; q < button.length; q++) {
     if(q==number[1]) {
       button[q].classList.add('active');
     }
@@ -95,7 +95,7 @@ function sliderFunction(place, button, slide) {
       button[q].classList.remove('active');
     }
   }
-  for (var j=0; j < topSlide.length; j++) {
+  for (var j=0; j < slide.length; j++) {
     if(j==number[1]) {
       slide[j].classList.add('active');
     }
